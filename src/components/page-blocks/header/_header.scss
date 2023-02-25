@@ -1,0 +1,27 @@
+.header {
+
+  height: 80px;
+  padding: 15px 35px;
+  background-color: $black;
+  color: $lightGrey;
+  font-family: "Poppins", sans-serif;
+
+  // .header__hashtag
+  &__hashtag {
+    font-size: 14px;
+  }
+
+  // .header__logo
+  &__logo {
+    @media (max-width: $md4 + px) {
+      display: none;
+    }
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 55px;
+  }
+}
+

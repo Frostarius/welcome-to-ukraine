@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  gap: 80px;
+  @media (max-width: $md2 + px) {
+    color: $lightGrey;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    left: -300%;
+    transition: all 0.5s linear;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 23px;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $black;
+  }
+}
+
+.nav__active {
+  left: 0;
+}
