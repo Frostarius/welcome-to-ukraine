@@ -1,8 +1,6 @@
 .nav {
-  display: flex;
   gap: 80px;
   @media (max-width: $md2 + px) {
-    color: $lightGrey;
     position: absolute;
     text-transform: uppercase;
     top: 0;

@@ -1,1 +1,34 @@
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="footer__container --container --flex --just-space">
+        <div class="footer__column --flex --dir-col">
+            <div class="footer__box --flex --dir-col">
+                <h2 class="--title --title-light">
+                    Наші контакти <!-- TODO: font does not working -->
+                </h2>
+                <h3 class="--subtitle --subtitle-light">
+                    З радістю відповімо на усі ваші запити
+                </h3>
+            </div>
+            <div class="footer__box --flex --dir-col">
+                <a href="tel:+380967427461" class="footer__contact-link --text-hover">+380967427461</a> <!-- TODO: replace tel with include option -->
+                <a href="mailto:email@gmail.com" class="footer__contact-link --text-hover">email@gmail.com</a> <!-- TODO: replace mail with include option -->
+            </div>
+            <div class="footer__row --flex">
+                <a href="" class="footer__social-link --svg__facebook"></a>
+                <a href="" class="footer__social-link --svg__twitter"></a>
+                <a href="" class="footer__social-link --svg__linkedin"></a>
+            </div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__logo --svg__logo"></div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__row --flex">
+                <a href="" class="--link --text-hover">Про нас</a>
+                <a href="" class="--link --text-hover">Фото</a>
+                <a href="" class="--link --text-hover">Допомогти</a>
+            </div>
+        </div>
+    </div>
+    @@include('../../bem-blocks/legal-links/_legal-links.html')
+</footer>

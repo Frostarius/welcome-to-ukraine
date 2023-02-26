@@ -1,0 +1,53 @@
+.footer {
+  background-color: $black;
+
+  &__contact-link {
+    font-family: 'Kharkiv Tone', sans-serif;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: $lightGrey;
+  }
+
+  &__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+  }
+
+  &__column {
+    @media (max-width: 800px) {
+      align-items: center;
+    }
+    gap: 50px;
+  }
+
+  &__box {
+    @media (max-width: 800px) {
+      align-items: center;
+    }
+    gap: 15px;
+  }
+
+  &__row {
+    gap: 30px;
+  }
+
+  &__logo {
+    width: 100px;
+    height: 130px;
+    background-size: contain;
+  }
+
+  &__social-link {
+    @include btn_anim(1.3, 1.3);
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+  }
+}

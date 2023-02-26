@@ -2,16 +2,15 @@
 
   height: 80px;
   padding: 15px 35px;
+  position: relative;
   background-color: $black;
   color: $lightGrey;
   font-family: "Poppins", sans-serif;
 
-  // .header__hashtag
   &__hashtag {
     font-size: 14px;
   }
 
-  // .header__logo
   &__logo {
     @media (max-width: $md4 + px) {
       display: none;

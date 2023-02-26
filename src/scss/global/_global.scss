@@ -1,10 +1,4 @@
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-.flex {
+.--flex {
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
@@ -38,6 +32,45 @@
 	flex-direction: column;
 }
 
+.--title {
+	font-family: 'Kharkiv Tone', sans-serif;
+	text-align: center;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+.--title-dark {
+	color: $blue;
+}
+
+.--title-light {
+	color: $white;
+}
+
+.--subtitle {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+}
+
+.--subtitle-dark {
+	color: $blue;
+}
+
+.--subtitle-light {
+	color: $white;
+}
+
+.--link {
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: center;
+	color: $lightGrey;
+}
+
 .--container {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
@@ -57,29 +90,8 @@
 	text-decoration: underline;
 }
 
-html {
-	font-size: 16px;
-}
-
-html,
-body {
-	min-height: 100%;
-	position: relative;
-}
-
-body {
-	font-size: 1rem;
-}
-
-ul,
-ol,
-li,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
