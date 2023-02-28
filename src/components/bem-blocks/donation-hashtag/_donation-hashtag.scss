@@ -1,0 +1,23 @@
+.donation-hashtag {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+
+  &__flag {
+    width: 80px;
+    height: 80px;
+  }
+
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+    font-family: 'Kharkiv Tone', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $lightGrey;
+  }
+}

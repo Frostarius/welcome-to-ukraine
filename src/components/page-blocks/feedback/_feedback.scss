@@ -1,0 +1,29 @@
+.feedback {
+  background-color: $black;
+  padding-top: 50px;
+
+  &__swiper {
+    width: 280px;
+    height: 320px;
+    --swiper-pagination-color: #fff;
+    --swiper-pagination-bullet-inactive-color: #fff;
+  }
+
+  &__slide {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__message {
+    display: inline-block;
+    max-width: 400px;
+    font-family: 'Work Sans', sans-serif;
+    color: $white;
+    height: auto;
+    padding: 10px 25px;
+    border-radius: 15px;
+    background-color: $feedbackMessageColor;
+  }
+}

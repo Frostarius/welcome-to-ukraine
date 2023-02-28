@@ -1,0 +1,40 @@
+.donation-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  width: 100%;
+
+  &__row {
+    @media (max-width: $md4 + px) {
+      width: 100%;
+      justify-content: space-between;
+      gap: 0;
+    }
+    display: flex;
+    gap: 50px;
+  }
+
+  &__price {
+
+
+    &:hover {
+      color: $black;
+      background-color: $white;
+    }
+
+    @include btn_anim();
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Kharkiv Tone', sans-serif;
+    font-size: 24px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: $white;
+  }
+
+  &__price__active {
+    color: $black;
+    background-color: $white;
+  }
+}

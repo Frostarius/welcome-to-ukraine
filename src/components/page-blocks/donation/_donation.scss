@@ -1,0 +1,20 @@
+.donation {
+  background-color: $pageBackgroundColorDark;
+  padding-top: 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: left;
+    align-items: start;
+  }
+}
