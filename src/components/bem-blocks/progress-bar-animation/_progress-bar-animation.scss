@@ -1,0 +1,16 @@
+.progress-bar {
+  @media (max-width: 1150px) {
+    width: 100%;
+  }
+  width: 800px;
+  height: 17px;
+  background-color: $white;
+  border: 1px solid $white;
+  box-shadow: 0 0 12px rgba(3, 2, 80, 0.16);
+  border-radius: 15px;
+  &__value {
+    height: 100%;
+    background-color: $black;
+    border-radius: 15px;
+  }
+}

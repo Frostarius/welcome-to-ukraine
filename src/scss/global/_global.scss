@@ -89,8 +89,13 @@
 }
 
 .--button {
+	@media(max-width: 550px) {
+		width: 95%;
+	}
+
 	@include btn_anim();
 	cursor: pointer;
+	text-align: center;
 	display: inline-block;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 600;

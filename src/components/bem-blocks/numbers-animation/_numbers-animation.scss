@@ -1,0 +1,22 @@
+.numbers-animation {
+  @media(max-width: 550px) {
+    font-size: 36px;
+  }
+  &::after {
+    content: ' uah';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 23px;
+  }
+  text-align: center;
+  font-family: 'Kharkiv Tone', sans-serif;
+  font-size: 96px;
+  line-height: 97px;
+  color: $black;
+  animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

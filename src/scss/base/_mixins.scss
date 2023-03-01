@@ -31,6 +31,30 @@
 	}
 }
 
+@mixin adaptive-position-absolute($pcTop,
+                                  $pcLeft,
+                                  $pcRight,
+                                  $mobileTop,
+                                  $mobileLeft,
+                                  $mobileRight,)
+{
+	@media (max-width: 1150px) {
+		top: $mobileTop;
+		right: $mobileRight;
+		left: $mobileLeft;
+	}
+	position: absolute;
+	top: $pcTop;
+	right: $pcRight;
+	left: $pcLeft;
+}
+
+@mixin adaptive-hide($breakpoint) {
+	@media (max-width:$breakpoint) {
+		display: none;
+	}
+}
+
 @mixin adaptive-value($property, $startSize, $minSize, $type) {
 	$addSize: $startSize - $minSize;
 	@if $type==1 {
