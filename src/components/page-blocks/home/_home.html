@@ -1,10 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<section class="home">
+    <div class="home__grid home-grid --container">
+        <div class="home-grid__item-1 --flex --dir-col --just-center">
+            <h2 class="home__title">
+                Welcome <br class="home__show-on-mobile"> to Ukraine
+            </h2>
+            <h3 class="home__subtitle --subtitle">
+                Благодійна організація
+            </h3>
+            <a href="" class="home__link --button --button-black home__hide-on-mobile">
+                Допомогти
+            </a>
+        </div>
+        <div class="home-grid__item-2 home__hide-on-mobile">
+            <div class="home__row --flex --align-center">
+                <img src="../../../img/content/home/07.png"
+                     alt=""
+                     style="width: 290px; height: 166px">
+                <img src="../../../img/content/home/08.png"
+                     alt=""
+                     style="width: 290px; height: 166px">
+            </div>
+            <div class="home__row --flex --align-center">
+                <img src="../../../img/content/home/09.png"
+                     alt=""
+                     style="width: 273px; height: 166px">
+                <div class="home__hashtag home-hashtag --flex --align-center --just-center">
+                    <a href="" class="home-hashtag__link --link --text-hover">
+                        #StandwithUkraine
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="home-grid__item-3">
+            <div class="home__row --flex --align-center">
+                <img src="../../../img/content/home/01.png"
+                     alt=""
+                     style="width: 156px; height: 156px">
+                <img src="../../../img/content/home/02.png"
+                     alt=""
+                     style="width: 156px; height: 156px">
+                <img src="../../../img/content/home/03.png"
+                     alt=""
+                     class="home__hide-on-mobile"
+                     style="width: 263px; height: 166px">
+            </div>
+            <div class="home__row --flex --align-center">
+                <img src="../../../img/content/home/04.png"
+                     alt=""
+                     style="width: 315px; height: 156px">
+                <img src="../../../img/content/home/05.png"
+                     alt=""
+                     class="home__hide-on-mobile"
+                     style="width: 166px; height: 166px">
+                <img src="../../../img/content/home/06.png"
+                     alt=""
+                     class="home__hide-on-mobile"
+                     style="width: 166px; height: 166px">
+            </div>
+        </div>
+        <div class="home-grid__item-4 --flex --dir-col --just-center --align-center">
+            <a href="" class="home__link --button --button-black home__show-on-mobile">
+                Допомогти
+            </a>
+            <div class="home__column --flex --dir-col">
+                <div class="home__flag --svg__flag-02"></div>
+                <p class="home__tagline --flex --align-center --just-center">
+                    Збережи життя <br> допоможи потребуючим
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
-</body>
-</html>
+<!-- TODO: replace global styles with mixins -->
