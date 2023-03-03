@@ -1,12 +1,18 @@
-<section class="achievements">
+<section class="achievements" id="achievements">
   <div class="achievements__container --flex --dir-col --align-center --just-center --container">
-    <h2 class="achievements__title --title --title-dark">Наші досягнення</h2>
-    <h3 class="achievements__subtitle --subtitle --subtitle-dark">Ми змогли допомогти багатьом людям <br> з початку війни</h3>
+    <h2 class="achievements__title --title --title-dark"
+        data-aos="fade-up">
+      Наші досягнення
+    </h2>
+    <h3 class="achievements__subtitle --subtitle --subtitle-dark"
+        data-aos="fade-up">
+      Ми змогли допомогти багатьом людям <br> з початку війни
+    </h3>
     <div class="achievements__box">
       @@include("../../bem-blocks/numbers-animation/_numbers-animation.html")
       @@include("../../bem-blocks/progress-bar-animation/_progress-bar-animation.html")
     </div>
-    <a href="" class="achievements__link --button --button-black">Допомогти</a>
+    <a href="#donation" class="achievements__link --button --button-black">Допомогти</a>
     <img src="img/content/achievements/01.webp"
          alt="" class="achievements__img-01"
          style="width: 167px; height: 167px">
@@ -39,5 +45,3 @@
          style="width: 122px; height: 122px">
   </div>
 </section>
-
-<!-- TODO: replace flex styles with classes -->

@@ -21,14 +21,14 @@
 
 <body>
 	<header class="header --flex --just-space --align-center">
-    <a href="" class="header__hashtag --text-hover">
+    <a href="https://www.standwithukraine.how/" class="header__hashtag --text-hover">
         #StandWithUkraine
     </a>
     <div class="header__logo --svg__logo"></div>
     <nav class="header__nav nav --flex">
-  <a href="" class="nav__item --text-hover --link">Про нас</a>
-  <a href="" class="nav__item --text-hover --link">Фото</a> <!-- TODO: replace with actual id -->
-  <a href="" class="nav__item --text-hover --link">Допомогти</a>
+  <a href="#about" class="nav__item --text-hover --link">Про нас</a>
+  <a href="#achievements" class="nav__item --text-hover --link">Фото</a>
+  <a href="#donation" class="nav__item --text-hover --link">Допомогти</a>
 </nav>
     <div class="nav-btn">
   <span></span>
@@ -41,13 +41,16 @@
 		<section class="home">
     <div class="home__grid home-grid --container">
         <div class="home-grid__item-1 --flex --dir-col --just-center">
-            <h2 class="home__title">
+            <h2 class="home__title"
+                data-aos="fade-up">
                 Welcome <br class="home__show-on-mobile"> to Ukraine
             </h2>
-            <h3 class="home__subtitle --subtitle">
+            <h3 class="home__subtitle --subtitle"
+                data-aos="fade-up">
                 Благодійна організація
             </h3>
-            <a href="" class="home__link --button --button-black home__hide-on-mobile">
+            <a href="#donation" class="home__link --button --button-black home__hide-on-mobile"
+               data-aos="fade-up">
                 Допомогти
             </a>
         </div>
@@ -64,11 +67,11 @@
                 <img src="img/content/home/09.png"
                      alt=""
                      style="width: 273px; height: 166px">
-                <div class="home__hashtag home-hashtag --flex --align-center --just-center">
-                    <a href="" class="home-hashtag__link --link --text-hover">
-                        #StandwithUkraine
-                    </a>
-                </div>
+                <div class="home-hashtag --flex --align-center --just-center">
+  <a href="https://www.standwithukraine.how/" class="home-hashtag__link --link --text-hover">
+    #StandwithUkraine
+  </a>
+</div>
             </div>
         </div>
         <div class="home-grid__item-3">
@@ -99,7 +102,7 @@
             </div>
         </div>
         <div class="home-grid__item-4 --flex --dir-col --just-center --align-center">
-            <a href="" class="home__link --button --button-black home__show-on-mobile">
+            <a href="#donation" class="home__link --button --button-black home__show-on-mobile">
                 Допомогти
             </a>
             <div class="home__column --flex --dir-col">
@@ -111,12 +114,16 @@
         </div>
     </div>
 </section>
-
-<!-- TODO: replace global styles with mixins -->
-		<section class="achievements">
+		<section class="achievements" id="achievements">
   <div class="achievements__container --flex --dir-col --align-center --just-center --container">
-    <h2 class="achievements__title --title --title-dark">Наші досягнення</h2>
-    <h3 class="achievements__subtitle --subtitle --subtitle-dark">Ми змогли допомогти багатьом людям <br> з початку війни</h3>
+    <h2 class="achievements__title --title --title-dark"
+        data-aos="fade-up">
+      Наші досягнення
+    </h2>
+    <h3 class="achievements__subtitle --subtitle --subtitle-dark"
+        data-aos="fade-up">
+      Ми змогли допомогти багатьом людям <br> з початку війни
+    </h3>
     <div class="achievements__box">
       <div id="numbers-animation"></div>
       <div class="progress-bar">
@@ -124,7 +131,7 @@
   </div>
 </div>
     </div>
-    <a href="" class="achievements__link --button --button-black">Допомогти</a>
+    <a href="#donation" class="achievements__link --button --button-black">Допомогти</a>
     <img src="img/content/achievements/01.webp"
          alt="" class="achievements__img-01"
          style="width: 167px; height: 167px">
@@ -157,10 +164,11 @@
          style="width: 122px; height: 122px">
   </div>
 </section>
-
-<!-- TODO: replace flex styles with classes -->
-		<section class="about">
-    <h2 class="--title --title-dark about__title">Про нас</h2>
+		<section class="about" id="about">
+    <h2 class="--title --title-dark about__title"
+        data-aos="fade-up">
+        Про нас
+    </h2>
     <div class="about__grid about-grid --container">
         <img src="img/content/about/01.webp"
              alt=""
@@ -185,10 +193,11 @@
         </p>
     </div>
 </section>
-
-<!-- TODO: replace card component with global class -->
 		<section class="volunteering">
-    <h2 class="--title --title-dark volunteering__title">Як ми допомагаємо мирному населенню</h2>
+    <h2 class="--title --title-dark volunteering__title"
+        data-aos="fade-up">
+        Як ми допомагаємо мирному населенню
+    </h2>
     <div class="volunteering__grid volunteering-grid --container">
         <div class="volunteering-grid__item volunteering-grid__item-1">
             <img src="img/content/volunteering/01.webp"
@@ -229,17 +238,22 @@
         <div class="volunteering__line volunteering__hide-on-mobile"></div>
     </div>
 </section>
-		<section class="donation">
+		<section class="donation"
+         id="donation">
     <div class="donation__container --container">
         <div class="donation__text">
-            <h2 class="--title --title-light --flex">Ви можете зберегти життя</h2>
-            <h3 class="--subtitle --subtitle-light --flex">
+            <h2 class="--title --title-light --flex"
+                data-aos="fade-up">
+                Ви можете зберегти життя
+            </h2>
+            <h3 class="--subtitle --subtitle-light --flex"
+                data-aos="fade-up">
                 З радістю відповімо на усі ваші запити
             </h3>
         </div>
         <div class="donation-hashtag">
   <div class="--svg__flag-01 donation-hashtag__flag"></div>
-  <a href="" class="donation-hashtag__link">Stand with ukraine</a>
+  <a href="https://www.standwithukraine.how/" class="donation-hashtag__link">Stand with ukraine</a>
 </div>
         <div class="donation-btns">
     <div class="donation-btns__row">
@@ -258,11 +272,9 @@
     </div>
     <div class="donation-btns__submit --button --button-yellow"
          tabindex="0">
-        Make a Donation
+        Зробити пожертву
     </div>
 </div>
-
-<!-- TODO: fix BEM tree in components-->
     </div>
 </section>
 		<section class="feedback">
@@ -271,12 +283,12 @@
             <div class="swiper-wrapper feedback__swiper-wrapper">
                 <div class="swiper-slide feedback__slide">
                     <p class="feedback__message">
-                        Доброго дня. Ми отримали посилку) ВСЕ ДУУУЖЕ КЛАСНЕ. ЗАДОВОЛЕНІ НА ВСІ 100)))👍👍👍 ДІВЧАТКА ВИ БОМБЕЗНО КРУТІ ФЕЇ) ПРОСТО НЕМА СЛІВ ЩОБ ВСЕ ПЕРЕДАТЬ.😍😘😘🍡😘
+                        Дякуємо!!! Ми отримали одяг і продукти. <br> Велике дякую вам!!!
                     </p>
                 </div>
                 <div class="swiper-slide feedback__slide">
                     <p class="feedback__message">
-                        Дякуємо!!! Ми отримали одяг і продукти. <br> Велике дякую вам!!!
+                        Доброго дня. Ми отримали посилку) ВСЕ ДУУУЖЕ КЛАСНЕ. ЗАДОВОЛЕНІ НА ВСІ 100)))👍👍👍 ДІВЧАТКА ВИ БОМБЕЗНО КРУТІ ФЕЇ) ПРОСТО НЕМА СЛІВ ЩОБ ВСЕ ПЕРЕДАТЬ.😍😘😘🍡😘
                     </p>
                 </div>
                 <div class="swiper-slide feedback__slide">
@@ -319,21 +331,25 @@
     <div class="footer__container --container --flex --just-space">
         <div class="footer__column --flex --dir-col">
             <div class="footer__box --flex --dir-col">
-                <h2 class="--title --title-light">
-                    Наші контакти <!-- TODO: font does not working -->
+                <h2 class="--title --title-light"
+                    data-aos="fade-up">
+                    Наші контакти
                 </h2>
-                <h3 class="--subtitle --subtitle-light">
+                <h3 class="--subtitle --subtitle-light"
+                    data-aos="fade-up">
                     З радістю відповімо на усі ваші запити
                 </h3>
             </div>
             <div class="footer__box --flex --dir-col">
-                <a href="tel:+380967427461" class="footer__contact-link --text-hover">+380967427461</a> <!-- TODO: replace tel with include option -->
-                <a href="mailto:email@gmail.com" class="footer__contact-link --text-hover">email@gmail.com</a> <!-- TODO: replace mail with include option -->
+                <a href="tel:+380630288462" class="footer__contact-link --text-hover">+380630288462</a>
+                <a href="mailto:rostikr414@gmail.com" class="footer__contact-link --text-hover">rostikr414@gmail.com</a>
             </div>
             <div class="footer__row --flex">
-                <a href="" class="footer__social-link --svg__facebook"></a>
-                <a href="" class="footer__social-link --svg__twitter"></a>
-                <a href="" class="footer__social-link --svg__linkedin"></a>
+                <a href="https://t.me/Rechimatusi" class="footer__social-link --svg__telegram"></a>
+                <a href="https://www.tiktok.com/@user5092920691292?_t=8aCqxuf9apJ&_r=1"
+                   class="footer__social-link --svg__tiktok"></a>
+                <a href="https://instagram.com/welcome_to_ukraine_ditch?igshid=YmJhNjkzNzY="
+                   class="footer__social-link --svg__instagram"></a>
             </div>
         </div>
         <div class="footer__column">
@@ -341,9 +357,9 @@
         </div>
         <div class="footer__column">
             <div class="footer__row --flex">
-                <a href="" class="--link --text-hover">Про нас</a>
-                <a href="" class="--link --text-hover">Фото</a>
-                <a href="" class="--link --text-hover">Допомогти</a>
+                <a href="#about" class="--link --text-hover">Про нас</a>
+                <a href="#achievements" class="--link --text-hover">Фото</a>
+                <a href="#donation" class="--link --text-hover">Допомогти</a>
             </div>
         </div>
     </div>

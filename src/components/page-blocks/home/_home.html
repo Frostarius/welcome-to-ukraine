@@ -1,13 +1,16 @@
 <section class="home">
     <div class="home__grid home-grid --container">
         <div class="home-grid__item-1 --flex --dir-col --just-center">
-            <h2 class="home__title">
+            <h2 class="home__title"
+                data-aos="fade-up">
                 Welcome <br class="home__show-on-mobile"> to Ukraine
             </h2>
-            <h3 class="home__subtitle --subtitle">
+            <h3 class="home__subtitle --subtitle"
+                data-aos="fade-up">
                 Благодійна організація
             </h3>
-            <a href="" class="home__link --button --button-black home__hide-on-mobile">
+            <a href="#donation" class="home__link --button --button-black home__hide-on-mobile"
+               data-aos="fade-up">
                 Допомогти
             </a>
         </div>
@@ -24,11 +27,7 @@
                 <img src="img/content/home/09.png"
                      alt=""
                      style="width: 273px; height: 166px">
-                <div class="home__hashtag home-hashtag --flex --align-center --just-center">
-                    <a href="" class="home-hashtag__link --link --text-hover">
-                        #StandwithUkraine
-                    </a>
-                </div>
+                @@include("../../bem-blocks/home-hashtag/_home-hashtag.html")
             </div>
         </div>
         <div class="home-grid__item-3">
@@ -59,7 +58,7 @@
             </div>
         </div>
         <div class="home-grid__item-4 --flex --dir-col --just-center --align-center">
-            <a href="" class="home__link --button --button-black home__show-on-mobile">
+            <a href="#donation" class="home__link --button --button-black home__show-on-mobile">
                 Допомогти
             </a>
             <div class="home__column --flex --dir-col">
@@ -71,5 +70,3 @@
         </div>
     </div>
 </section>
-
-<!-- TODO: replace global styles with mixins -->

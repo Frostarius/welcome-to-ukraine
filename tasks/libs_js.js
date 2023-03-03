@@ -1,4 +1,4 @@
-const plugins = []; //TODO: activate AOS
+const plugins = [];
 const {
 	src,
 	dest

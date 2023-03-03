@@ -3,3 +3,4 @@ package-lock.json
 yarn.lock
 process.json
 .idea
+tasks/ftp_settings.json
